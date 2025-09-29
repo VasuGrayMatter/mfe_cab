@@ -1,0 +1,13 @@
+.cab-summary {
+  border-left: 4px solid #45b7d1;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.category-total {
+  font-weight: 600;
+  color: #45b7d1;
+  text-align: right;
+  border-top: 1px solid #e9ecef;
+  padding-top: 5px;
+}

@@ -1,0 +1,144 @@
+.cab-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.cab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.cab-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+}
+
+.cab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.cab-image {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cab-info {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.cab-name {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.cab-type {
+  margin: 0 0 15px 0;
+  color: #6c757d;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cab-description {
+  margin: 0 0 15px 0;
+  color: #495057;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.cab-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #28a745;
+  margin: 10px 0;
+}
+
+.cab-actions {
+  margin-top: auto;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #45b7d1 0%, #96ceb4 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(69, 183, 209, 0.4);
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.qty-btn {
+  background: #45b7d1;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.qty-btn:hover {
+  background: #3aa8c1;
+  transform: scale(1.1);
+}
+
+.quantity {
+  font-size: 1.2rem;
+  font-weight: 600;
+  min-width: 40px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .cab-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cab-card {
+    padding: 20px;
+  }
+}
